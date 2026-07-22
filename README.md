@@ -4,17 +4,17 @@ Dashboard de análisis de ventas retail construido de extremo a extremo en Power
 
 ## Sobre los datos
 
-Este proyecto utiliza un **dataset generado con lógica de negocio realista** (patrones de estacionalidad, distribución geográfica, comportamiento de descuentos y desempeño de vendedores), dado que datos comerciales reales de retail no son de acceso público. El objetivo del proyecto es demostrar dominio técnico completo del pipeline de BI —modelado, DAX, visualización y narrativa— no realizar un análisis de mercado real.
+Este proyecto utiliza un **dataset generado con lógica de negocio realista** (patrones de estacionalidad, distribución geográfica, comportamiento de descuentos y desempeño de vendedores), dado que datos comerciales reales de retail no son de acceso público. El objetivo del proyecto es demostrar dominio técnico completo del pipeline de BI (modelado, DAX, visualización y narrativa), no realizar un análisis de mercado real.
 
 ## Datos crudos y proceso de limpieza
 
 El archivo original (`data/raw/RetailCol_Ventas_2025.xlsx`) contiene 2,808 registros de transacciones con las siguientes inconsistencias reales, generadas intencionalmente para practicar el proceso de limpieza:
 
-| Problema detectado | Detalle |
-| **IDs duplicados** | 52 transacciones con `ID_Transaccion` repetido |
-| **Valores nulos**  | 96 registros sin `Precio_Unitario` |
-| **Inconsistencia de texto en `Ciudad`** | 14 variantes distintas para 5 ciudades reales (ej. "Bogotá", "Bogota", "BOGOTA", "bogota" todas representan la misma ciudad) |
-| **Sin estandarizar mayúsculas/tildes**  | Mezcla de mayúsculas, minúsculas y con/sin tilde en nombres de ciudad |
+ Problemas detectados:
+ 52 transacciones con `ID_Transaccion` repetido 
+ 96 registros sin `Precio_Unitario` 
+ **Inconsistencia de texto en `Ciudad`** : 14 variantes distintas para 5 ciudades reales (ej. "Bogotá", "Bogota", "BOGOTA", "bogota" todas representan la misma ciudad) 
+ **Sin estandarizar mayúsculas/tildes**   Mezcla de mayúsculas, minúsculas y con/sin tilde en nombres de ciudad 
 
 El proceso de limpieza en Power Query incluyó: Creacion de un perfil de datos para detectar anomalías en el dataset, que concluyó en la eliminación de duplicados por `ID_Transaccion`, exclusión de nulos en `Precio_Unitario`, y estandarización de la columna `Ciudad` a un formato único por ciudad (capitalización y tildes consistentes) para permitir agrupaciones correctas en el modelo de datos.
 
