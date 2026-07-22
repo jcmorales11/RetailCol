@@ -20,31 +20,31 @@ El proceso de limpieza en Power Query incluyó: Creacion de un perfil de datos p
 
 ## Contenido del dashboard
 
-1. **Resumen Ejecutivo y Balance General** — KPIs principales (Ingreso Total, Total Transacciones, Ticket Promedio, Total Unidades) e ingreso por ciudad.
-2. **Registro Cronológico** — evolución mensual de ingresos y transacciones.
-3. **Análisis Geográfico** — desempeño por ciudad con mapa interactivo, ticket promedio e ingreso total.
-4. **Productos y Categoría** — unidades e ingresos por categoría de producto y canal de venta.
-5. **Rendimiento por Canal y Descuentos** — impacto de los descuentos aplicados sobre el ticket promedio y las unidades vendidas.
-6. **Rendimiento de Vendedores** — ingreso por vendedor y evolución trimestral de ventas.
-7. **Insights Analíticos** — hallazgos clave: estabilidad del ticket promedio entre ciudades y la relación entre categorías con mayor volumen vs. mayor rentabilidad.
-8. **Estrategia de Descuentos** — evidencia de que los descuentos aplicados (hasta 25%) no generan un incremento real de volumen, con un 69.63% de las unidades vendidas sin ningún descuento.
-9. **Recomendación y Simulador What-If** — proyección interactiva de ingreso neto según distintos escenarios de descuento (0-20%), con recomendación de eliminar o rediseñar la estrategia actual.
+1. **Resumen Ejecutivo y Balance General** : KPIs principales (Ingreso Total, Total Transacciones, Ticket Promedio, Total Unidades) e ingreso por ciudad.
+2. **Registro Cronológico** : evolución mensual de ingresos y transacciones.
+3. **Análisis Geográfico** : desempeño por ciudad con mapa interactivo, ticket promedio e ingreso total.
+4. **Productos y Categoría** : unidades e ingresos por categoría de producto y canal de venta.
+5. **Rendimiento por Canal y Descuentos** : impacto de los descuentos aplicados sobre el ticket promedio y las unidades vendidas.
+6. **Rendimiento de Vendedores** : ingreso por vendedor y evolución trimestral de ventas.
+7. **Insights Analíticos** : hallazgos clave: estabilidad del ticket promedio entre ciudades y la relación entre categorías con mayor volumen vs. mayor rentabilidad.
+8. **Estrategia de Descuentos** : evidencia de que los descuentos aplicados (hasta 25%) no generan un incremento real de volumen, con un 69.63% de las unidades vendidas sin ningún descuento.
+9. **Recomendación y Simulador What:If** : proyección interactiva de ingreso neto según distintos escenarios de descuento (0:20%), con recomendación de eliminar o rediseñar la estrategia actual.
 
 ## Hallazgo principal
 
-El análisis muestra que la estrategia de descuentos vigente **no genera un aumento proporcional en volumen de ventas** — el comportamiento de compra es en gran medida inmune a las promociones, y los descuentos solo reducen el ingreso neto sin un retorno claro. El simulador What-If permite cuantificar el impacto de mantener, reducir o eliminar esta estrategia.
+El análisis muestra que la estrategia de descuentos vigente **no genera un aumento proporcional en volumen de ventas** : el comportamiento de compra es en gran medida inmune a las promociones, y los descuentos solo reducen el ingreso neto sin un retorno claro. El simulador What:If permite cuantificar el impacto de mantener, reducir o eliminar esta estrategia.
 
 ## Herramientas utilizadas
 
-Power BI · Power Query · DAX (medidas de agregación, parámetros What-If) · Modelado de datos relacional
+Power BI · Power Query · DAX (medidas de agregación, parámetros What:If) · Modelado de datos relacional
 
 ## Medidas DAX destacadas
 
-- `Ingreso Total`
-- `Total Transacciones`
-- `Ticket Promedio` (con `DIVIDE` para control de división por cero)
-- `Total Unidades`
-- `Medidas Utilizadas para el Simulador`
+: `Ingreso Total`
+: `Total Transacciones`
+: `Ticket Promedio` (con `DIVIDE` para control de división por cero)
+: `Total Unidades`
+: `Medidas Utilizadas para el Simulador`
 
 
-*Proyecto de portafolio — Juan Camilo Morales Cervantes, estudiante de Ingeniería de Sistemas, Universidad del Magdalena.*
+*Proyecto de portafolio : Juan Camilo Morales Cervantes, estudiante de Ingeniería de Sistemas, Universidad del Magdalena.*
